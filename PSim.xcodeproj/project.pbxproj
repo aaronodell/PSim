@@ -17,7 +17,6 @@
 		932128EB1690F1D300EE43C5 /* SimRun.m in Sources */ = {isa = PBXBuildFile; fileRef = 932128EA1690F1D300EE43C5 /* SimRun.m */; };
 		937F02751692857300CF3279 /* SimParamaters.m in Sources */ = {isa = PBXBuildFile; fileRef = 937F02741692857300CF3279 /* SimParamaters.m */; };
 		93DFDAE0168F4B5000A27B26 /* PsimMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DFDADF168F4B5000A27B26 /* PsimMainView.m */; };
-		93DFDB33168FB31300A27B26 /* psim.c in Sources */ = {isa = PBXBuildFile; fileRef = 93DFDB32168FB31300A27B26 /* psim.c */; };
 		93DFDB36168FB45100A27B26 /* PsimModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DFDB35168FB45100A27B26 /* PsimModel.m */; };
 		93DFDB48168FB99100A27B26 /* PSimController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DFDB47168FB99100A27B26 /* PSimController.m */; };
 		93F7ED5416AF248100C250C2 /* PSMathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F7ED5316AF248100C250C2 /* PSMathHelper.m */; };
@@ -46,7 +45,6 @@
 		937F02741692857300CF3279 /* SimParamaters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimParamaters.m; sourceTree = "<group>"; };
 		93DFDADE168F4B5000A27B26 /* PsimMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PsimMainView.h; sourceTree = "<group>"; };
 		93DFDADF168F4B5000A27B26 /* PsimMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PsimMainView.m; sourceTree = "<group>"; };
-		93DFDB32168FB31300A27B26 /* psim.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = psim.c; sourceTree = "<group>"; };
 		93DFDB34168FB45100A27B26 /* PsimModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PsimModel.h; sourceTree = "<group>"; };
 		93DFDB35168FB45100A27B26 /* PsimModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PsimModel.m; sourceTree = "<group>"; };
 		93DFDB46168FB99100A27B26 /* PSimController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSimController.h; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				93DFDB32168FB31300A27B26 /* psim.c */,
 				256AC3F00F4B6AF500CF3369 /* PSim_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
@@ -220,7 +217,6 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* PSimAppDelegate.m in Sources */,
 				93DFDAE0168F4B5000A27B26 /* PsimMainView.m in Sources */,
-				93DFDB33168FB31300A27B26 /* psim.c in Sources */,
 				93DFDB36168FB45100A27B26 /* PsimModel.m in Sources */,
 				93DFDB48168FB99100A27B26 /* PSimController.m in Sources */,
 				931DF67316900E6F009B0C7E /* SimState.m in Sources */,
