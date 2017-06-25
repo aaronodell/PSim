@@ -91,12 +91,10 @@
 	// Main processing loop, runs once for each timestep
 	while(currentTime < endTime && !userDidAbort) {
 				
-		if([simParam collisionsOn]) {
-			collisionOccured = NO;
-			mergeParticle1Index = -1;
-			mergeParticle2Index = -1;
-		}		
-		maxRelativeVelocitySquaredPerDistance = 0;		
+		collisionOccured = NO;
+		mergeParticle1Index = -1;
+		mergeParticle2Index = -1;
+		maxRelativeVelocitySquaredPerDistance = 0;
 		[currentSimState setSimTime:currentTime];
 
 		
