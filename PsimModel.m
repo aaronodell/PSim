@@ -53,8 +53,7 @@
 	// Declare variables
 	int i, j;
 	float force_x, force_y;
-	float delta_x, delta_y, distance;
-	float angle, magnitude;
+	float delta_x, delta_y, distance, magnitude;
 	float currentTime, endTime = [simParam simLength];
 	float relativeVelocitySquared;
 	float relativeVelocitySquaredPerDistance, maxRelativeVelocitySquaredPerDistance, relativeMovementPerTimestep;
@@ -128,15 +127,14 @@
 				// Calculate total distance between particles using pathagorean theorem
 				delta_x = [jPar posX] - [iPar posX];
 				delta_y = [jPar posY] - [iPar posY];				
-				angle = atan2(delta_y,delta_x);
 				distance = sqrt(delta_x*delta_x + delta_y*delta_y);
 				
 				// Calculate force of each particle on the other using Newton's Law of Universal Gravitation (adding softening factor if non-zero)
 				magnitude = grav_const*[iPar mass]*[jPar mass]/(distance*distance + [simParam gravitySofteningFactor]);				
 
 				// Decompose into x and y vector
-				force_x = magnitude*cos(angle);
-				force_y = magnitude*sin(angle);
+				force_x = magnitude*(delta_x/distance); // mag * cos(theta)
+				force_y = magnitude*(delta_y/distance); // mag * sin(theta)
 				
 
 				/*
